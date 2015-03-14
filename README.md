@@ -1,5 +1,5 @@
 # Excel-Reverse-Complement
-A simple add-in for Excel supplying one function to calculate the reverse complement of a DNA sequence
+A simple add-in for Excel supplying functions to calculate the reverse, complement, and reverse-complement of a DNA or RNA sequence.
 
 ## Installation
 
@@ -11,12 +11,40 @@ Refer to Excel documentation on how to install Excel Add-Ins.  In Excel 2011 for
 
  ## Usage
 
- The package provides one function the will calculate the reverse complement of a DNA/RNA sequence and it is called as follows:
+ ### revcom
+ 
+ This returns the reverse complement of a DNA or RNA sequence. It takes in a string and an optional second parameter specifying whether the string is RNA or DNA:
 
- =revcom("DNA_SEQUENCE")
+ =revcom("DNA/RNA SEQUENCE", isRNA)
 
- replacing "DNA_SEQUENCE" with the actual sequence or cell reference to be reverse-complemented.
+ replacing "DNA/RNA_SEQUENCE" with the actual sequence or cell reference to be reverse-complemented and isRNA as a 1 if the input sequence is RNA.
 
  Example:
 
-=revcom("ATATCGA") will output "TCGATAT"
+ =revcom("ATATCGA") will output "TCGATAT"
+
+
+ ### complement
+
+ This returns the complement of a DNA or RNA sequence. It takes in a string and an optional second parameter specifying whether the string is RNA or DNA:
+
+ =complement("DNA/RNA SEQUENCE", isRNA)
+
+ replacing "DNA/RNA_SEQUENCE" with the actual sequence or cell reference to be complemented and isRNA as a 1 if the input sequence is RNA.
+
+ Example:
+
+ =complement("ATATCGA") will output "TATAGCT"
+
+
+ ### reverse
+ 
+ This returns the reverse of a string.
+
+ =reverse("String")
+
+ replacing "String" with the actual string to be reversed or a cell reference.
+
+ Example:
+
+ =reverse("ATATCGA") will output "AGCTATA"
