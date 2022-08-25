@@ -5,11 +5,11 @@ A simple add-in for Excel supplying functions to calculate the reverse, compleme
 
 Refer to Excel documentation on how to install Excel Add-Ins.  In Excel 2011 for Mac, the procedure is as follows:
 
- * Select 'Tools->Add-Ins...' and click the 'Select' button
+ * Select 'Tools->Excel Add-Ins...' and click the 'Select' button
  * Navigate to the .xlam file provided by this package and click 'Open'
  * Ensure that the add-in has a check mark next to it and click 'OK'
 
- ## Usage
+## Usage
 
  ### revcom
  
@@ -48,3 +48,6 @@ Refer to Excel documentation on how to install Excel Add-Ins.  In Excel 2011 for
  Example:
 
  =reverse("ATATCGA") will output "AGCTATA"
+ 
+## License
+This code is distributed under the [GNU GPLv3 License](LICENSE).
